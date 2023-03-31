@@ -47,7 +47,7 @@ Params:
   #tagline: "Welcome!"
   # mdTagline can be used instead to specify the tagline in Markdown for more customizability.
   #   Note that {cursor} is a placeholder and will be replaced by the actual cursor HTML when rendering.
-  mdTagline: "# Anthym\n ## A simple and fast programming language{cursor}"
+  mdTagline: "# Anthym\n ## Fun, fast programming.{cursor}"
 
   # enforceSinglePage will enforce redirection to the baseURL for all sub-directories/-pages.
   #   Example: If you create about.md, Hugo will also create a '/about/index.html' which might not be what you want for a *single* page site. 
@@ -69,9 +69,6 @@ Params:
 
 ## Additional theme features:
   Feat:
-    # ajaxBasin requires Basin setup for a free contact form (see instructions in README).
-    ajaxBasin: false
-
     # useStructuredData for your own https://schema.org/Person (SEO-friendly).
     #   This will be auto-generated dependent on the information you provide in this configuration.
     useStructuredData: false
@@ -124,20 +121,13 @@ Params:
 Menu:
   Main:
     - name: "About"
-      # identifier controls the section type (and therewith the appearence).
       identifier: about 
-      # url must be an anchor, for smooth scrolling to it when clicking on the menu item.
       url: "/#about"
-      # weight controls the order of the menu items.
       weight: 1
-    - name: "Work"
-      identifier: gallery
-      url: "/#work"
-      weight: 2
     - name: "Blog"
       identifier: blog
       url: "/#blog"
-      weight: 3
+      weight: 2
     # - name: ""
     #   # pre makes it possible to use arbitrary HTML before the name, e.g. referencing icons here is possible:
     #   pre: '<svg class="icon"><use xlink:href="#icon-external"/></svg>&nbsp;'
